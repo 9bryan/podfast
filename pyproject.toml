@@ -1,0 +1,24 @@
+[project]
+name = "podfast"
+version = "0.1.0"
+description = "podfast using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]==1.8.0",
+    "openai>=1.30.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+kickoff = "podfast.main:kickoff"
+run_crew = "podfast.main:kickoff"
+plot = "podfast.main:plot"
+run_with_trigger = "podfast.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "flow"

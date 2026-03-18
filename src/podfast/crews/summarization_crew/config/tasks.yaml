@@ -1,0 +1,21 @@
+summarize_transcript:
+  description: >
+    Analyze the following podcast transcript and produce a comprehensive yet concise summary.
+
+    Focus on:
+    - The main topics and themes discussed
+    - Key insights, arguments, or findings
+    - Any notable quotes or moments worth highlighting
+    - Actionable takeaways for the listener
+
+    Write in a warm, conversational tone — this summary will be converted to audio and
+    listened to, so it must sound natural when spoken aloud. Use flowing prose only.
+    No bullet points, no markdown headers, no lists. Target 250 to 400 words.
+
+    Transcript:
+    {transcription}
+  expected_output: >
+    A 250-400 word conversational summary written entirely in flowing prose,
+    suitable for text-to-speech playback. Covers the main topics, key insights,
+    and takeaways from the podcast without using bullet points or markdown formatting.
+  agent: podcast_summarizer
